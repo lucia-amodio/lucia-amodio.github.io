@@ -1,8 +1,11 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucia Amodio | Entrenamiento Personal</title>  <style>
+  <title>Lucia Amodio | Entrenamiento Personal</title>
+
+  <style>
     * {
       margin: 0;
       padding: 0;
@@ -26,7 +29,6 @@
     header h1 {
       font-size: 2.8rem;
       font-weight: 900;
-      letter-spacing: 1px;
     }
 
     header p {
@@ -67,6 +69,7 @@
       box-shadow: 0 15px 40px rgba(0,0,0,0.7);
       transition: transform 0.3s ease;
       border: 1px solid #1f1f1f;
+      cursor: pointer;
     }
 
     .card:hover {
@@ -79,25 +82,26 @@
       margin-bottom: 15px;
       font-size: 1.4rem;
     }
-    .info {
-  display: none;
-  margin-top: 20px;
-  background: #0b0b0b;
-  padding: 20px;
-  border-radius: 15px;
-  border: 1px solid #e10600;
-}
 
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 14px 26px;
-  background: #e10600;
-  color: #ffffff;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
+    .info {
+      display: none;
+      margin-top: 20px;
+      background: #0b0b0b;
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid #e10600;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 26px;
+      background: #e10600;
+      color: #ffffff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
     .about {
       display: grid;
@@ -119,7 +123,6 @@
     }
 
     .cta h2 {
-      color: #ffffff;
       font-size: 2.4rem;
       margin-bottom: 20px;
       font-weight: 900;
@@ -127,24 +130,17 @@
 
     .cta a {
       display: inline-block;
-      background-color: #000000;
-      color: #ffffff;
+      background-color: #000;
+      color: #fff;
       padding: 16px 34px;
       border-radius: 40px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1rem;
-      border: 2px solid #ffffff;
-      transition: all 0.3s ease;
-    }
-
-    .cta a:hover {
-      background-color: #ffffff;
-      color: #e10600;
+      border: 2px solid #fff;
     }
 
     footer {
-      background-color: #000000;
+      background-color: #000;
       text-align: center;
       padding: 25px;
       font-size: 0.9rem;
@@ -156,59 +152,84 @@
         grid-template-columns: 1fr;
       }
     }
-  </style></head><body>  <header>
-    <h1>Lucia Amodio</h1>
-    <p>Instructora de entrenamiento personal certificada · Rutinas presenciales y online · Clases grupales e individuales</p>
-  </header>  <section>
-    <div class="section-title">
-      <h2>Servicios</h2>
-    </div><div class="services">
-<div class="card" onclick="toggleInfo('rutinas')">
-  <h3>Rutinas Personalizadas</h3>
-  <p>Planes de entrenamiento diseñados según tus objetivos</p>
+  </style>
+</head>
 
-  <div id="rutinas" class="info">
+<body>
+
+<header>
+  <h1>Lucia Amodio</h1>
+  <p>Instructora de entrenamiento personal certificada · Rutinas presenciales y online · Clases grupales e individuales</p>
+</header>
+
+<section>
+  <div class="section-title">
+    <h2>Servicios</h2>
+  </div>
+
+  <div class="services">
+
+    <div class="card" onclick="toggleInfo('rutinas')">
+      <h3>Rutinas Personalizadas</h3>
+      <p>Planes diseñados según tus objetivos.</p>
+      <div id="rutinas" class="info">
+        <p>
+          Rutinas armadas según tu objetivo (fuerza, estética, descenso de grasa
+          o rendimiento), adaptadas a tu nivel y a si entrenás en casa o gimnasio.
+        </p>
+        <a href="https://wa.me/5491123596444" class="btn" target="_blank">Consultar por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleInfo('individual')">
+      <h3>Entrenamiento Individual</h3>
+      <p>Clases uno a uno con seguimiento.</p>
+      <div id="individual" class="info">
+        <p>
+          Entrenamientos personalizados con corrección técnica constante,
+          progresiones y acompañamiento total para lograr resultados reales.
+        </p>
+        <a href="https://wa.me/5491123596444" class="btn" target="_blank">Consultar por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleInfo('grupal')">
+      <h3>Clases Grupales</h3>
+      <p>Entrenamientos intensos y motivadores.</p>
+      <div id="grupal" class="info">
+        <p>
+          Clases dinámicas para entrenar en grupo, mejorar el rendimiento,
+          ganar fuerza y mantener la constancia con un enfoque funcional.
+        </p>
+        <a href="https://wa.me/5491123596444" class="btn" target="_blank">Consultar por WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <h2>Sobre mí</h2>
+  </div>
+
+  <div class="about">
     <p>
-      Rutinas creadas en base a tus objetivos personales (fuerza, estética,
-      descenso de grasa o rendimiento), teniendo en cuenta tu nivel actual
-      y tu disponibilidad. Se adaptan para entrenar en casa o en gimnasio.
+      Soy Lucia Amodio, instructora de entrenamiento personal certificada.
+      Trabajo con un enfoque fuerte, disciplinado y realista para ayudarte
+      a mejorar tu físico, fuerza y confianza.
     </p>
 
-    <a href="https://wa.me/5491123596444" target="_blank" class="btn">
-      Consultar por WhatsApp
-    </a>
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Entrenamiento fitness">
   </div>
-</div> 
-  <div class="card">
-    <h3>Entrenamiento Individual</h3>
-    <p>Clases uno a uno con seguimiento personalizado y corrección técnica constante.</p>
-  </div>
+</section>
 
-  <div class="card">
-    <h3>Clases Grupales</h3>
-    <p>Entrenamientos intensos, dinámicos y motivadores para potenciar resultados.</p>
-  </div>
-</div>
+<section class="cta">
+  <h2>¿Lista para entrenar en serio?</h2>
+  <p>Escribime y empezamos hoy</p><br>
+  <a href="https://wa.me/5491123596444?text=Hola%20Lucia,%20quiero%20info%20sobre%20entrenamiento%20personal">Contactar por WhatsApp</a>
+</section>
 
-  </section>  <section>
-    <div class="section-title">
-      <h2>Sobre mí</h2>
-    </div><div class="about">
-  <p>
-    Soy Lucia Amodio, instructora de entrenamiento personal certificada. Trabajo con un enfoque fuerte, disciplinado y
-    realista, ayudando a mis alumnos a mejorar su físico, fuerza y confianza a través de entrenamientos efectivos,
-    tanto presenciales como online.
-  </p>
-
-  <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Entrenamiento fitness" />
-</div>
-
-  </section>  <section class="cta">
-    <h2>¿Lista para entrenar en serio?</h2>
-    <p>Escribime y empezamos hoy</p><br />
-    <a href="https://wa.me/5491123596444?text=Hola%20Lucia,%20quiero%20info%20sobre%20entrenamiento%20personal%20%F0%9F%92%AA">Contactar por WhatsApp</a>
-  </section>  <footer>
-    © 2026 Lucia Amodio · Entrenamiento Personal
 <footer>
   © 2026 Lucia Amodio · Entrenamiento Personal
 </footer>
@@ -221,4 +242,4 @@
 </script>
 
 </body>
-</html>  
+</html>
